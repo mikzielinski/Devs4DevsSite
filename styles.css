@@ -184,6 +184,148 @@ a {
   border: 1px solid var(--stroke);
 }
 
+/* ================= MISSION ================= */
+
+.mission-body {
+  display: grid;
+  gap: 32px;
+}
+
+.who-we-are {
+  background: var(--bg);
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid var(--stroke);
+  display: grid;
+  gap: 16px;
+}
+
+.who-we-are h3 {
+  font-size: 1.4rem;
+}
+
+.lang-paragraph {
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+}
+
+.lang-paragraph .flag {
+  font-size: 1.2rem;
+}
+
+.cities-map {
+  display: grid;
+  gap: 16px;
+}
+
+.cities-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.cities-header p {
+  color: var(--muted);
+  max-width: 520px;
+}
+
+.map-card {
+  background: var(--card);
+  border-radius: 20px;
+  border: 1px solid var(--stroke);
+  padding: 24px;
+}
+
+.poland-map {
+  position: relative;
+  min-height: 320px;
+  border-radius: 18px;
+  background: radial-gradient(circle at 30% 20%, #e6e9ff, #f6f7ff 55%, #ffffff);
+  border: 1px dashed var(--stroke);
+}
+
+.map-marker {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: white;
+  border-radius: 999px;
+  border: 1px solid var(--stroke);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  box-shadow: 0 8px 20px rgba(15, 18, 34, 0.08);
+  transform: translate(-50%, -50%);
+}
+
+.map-marker::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 0 6px rgba(92, 77, 255, 0.15);
+}
+
+.map-marker:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.map-marker.warszawa {
+  top: 32%;
+  left: 65%;
+}
+
+.map-marker.lodz {
+  top: 45%;
+  left: 55%;
+}
+
+.map-marker.wroclaw {
+  top: 62%;
+  left: 30%;
+}
+
+.map-marker.krakow {
+  top: 68%;
+  left: 55%;
+}
+
+.partners {
+  background: var(--bg);
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid var(--stroke);
+  display: grid;
+  gap: 16px;
+}
+
+.partners p {
+  color: var(--muted);
+}
+
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.partner-logos span {
+  background: white;
+  border: 1px solid var(--stroke);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 /* ================= CONFERENCES ================= */
 
 .conference-grid {
