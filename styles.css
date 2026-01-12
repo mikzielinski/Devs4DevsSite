@@ -169,21 +169,6 @@ a {
   color: var(--muted);
 }
 
-/* ================= INFO GRID ================= */
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
-
-.info-card {
-  background: var(--card);
-  padding: 24px;
-  border-radius: 16px;
-  border: 1px solid var(--stroke);
-}
-
 /* ================= MISSION ================= */
 
 .mission-body {
@@ -213,6 +198,8 @@ a {
 .lang-paragraph .flag {
   font-size: 1.2rem;
 }
+
+/* ================= MAP ================= */
 
 .cities-map {
   display: grid;
@@ -252,21 +239,15 @@ a {
 
 .poland-shape {
   width: min(320px, 80%);
-  height: auto;
   fill: #d7defd;
   stroke: #8f9dff;
   stroke-width: 3px;
-  transition: fill 0.2s ease, stroke 0.2s ease;
   filter: drop-shadow(0 12px 24px rgba(76, 87, 255, 0.18));
-  opacity: 0.95;
-  z-index: 1;
 }
 
 .map-marker {
   position: absolute;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  transform: translate(-50%, -50%);
   padding: 6px 12px;
   background: white;
   border-radius: 999px;
@@ -275,7 +256,9 @@ a {
   font-size: 0.9rem;
   color: var(--secondary);
   box-shadow: 0 8px 20px rgba(15, 18, 34, 0.08);
-  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   transition: 0.2s ease;
   z-index: 2;
 }
@@ -292,78 +275,20 @@ a {
 .map-marker:hover {
   border-color: var(--primary);
   color: var(--primary);
-  transform: translate(-50%, -50%) scale(1.03);
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
-.poland-map:hover .poland-shape,
-.poland-map:focus-within .poland-shape {
-  fill: #cdd6ff;
-  stroke: #7487ff;
-}
-
-.map-marker.is-active {
-  border-color: var(--primary);
-  background: #f4f2ff;
-  color: var(--primary);
-}
-
-.map-marker.is-active::before {
-  animation: pulse 1.6s infinite;
-}
-
-.map-details {
-  margin-top: 20px;
-  display: grid;
-  gap: 12px;
-}
+.map-marker.warszawa { top: 32%; left: 65%; }
+.map-marker.lodz { top: 45%; left: 55%; }
+.map-marker.wroclaw { top: 62%; left: 30%; }
+.map-marker.krakow { top: 68%; left: 55%; }
 
 .map-hint {
+  margin-top: 16px;
   color: var(--muted);
 }
 
-.map-selection {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-}
-
-.map-label {
-  color: var(--muted);
-  font-weight: 500;
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 6px rgba(92, 77, 255, 0.15);
-  }
-  70% {
-    box-shadow: 0 0 0 14px rgba(92, 77, 255, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 6px rgba(92, 77, 255, 0);
-  }
-}
-
-.map-marker.warszawa {
-  top: 32%;
-  left: 65%;
-}
-
-.map-marker.lodz {
-  top: 45%;
-  left: 55%;
-}
-
-.map-marker.wroclaw {
-  top: 62%;
-  left: 30%;
-}
-
-.map-marker.krakow {
-  top: 68%;
-  left: 55%;
-}
+/* ================= PARTNERS ================= */
 
 .partners {
   background: var(--bg);
@@ -434,10 +359,9 @@ a {
   font-size: 0.9rem;
 }
 
-/* ================= AGENDA / COMMUNITY ================= */
+/* ================= AGENDA / SPEAKERS ================= */
 
 .agenda-grid,
-.community-grid,
 .speaker-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -445,26 +369,11 @@ a {
 }
 
 .agenda-card,
-.community-card {
-  background: var(--bg);
-  padding: 24px;
-  border-radius: 16px;
-  border: 1px solid var(--stroke);
-}
-
-.community-card span {
-  font-size: 1.8rem;
-}
-
-/* ================= SPEAKERS ================= */
-
 .speaker-card {
   background: white;
   padding: 24px;
   border-radius: 16px;
   border: 1px solid var(--stroke);
-  display: grid;
-  gap: 12px;
 }
 
 .speaker-avatar {
@@ -488,24 +397,6 @@ a {
   font-weight: 600;
 }
 
-/* ================= GALLERY ================= */
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
-}
-
-.gallery-item {
-  background: linear-gradient(135deg, #eef1ff, #ffffff);
-  border-radius: 16px;
-  border: 1px solid var(--stroke);
-  min-height: 160px;
-  display: grid;
-  place-items: center;
-  font-size: 2rem;
-}
-
 /* ================= CTA ================= */
 
 .cta {
@@ -516,14 +407,6 @@ a {
   flex-wrap: wrap;
 }
 
-.bullet-list {
-  margin-top: 16px;
-  padding-left: 20px;
-  color: var(--muted);
-  display: grid;
-  gap: 8px;
-}
-
 /* ================= FOOTER ================= */
 
 .footer {
@@ -532,18 +415,6 @@ a {
   color: white;
   display: grid;
   gap: 24px;
-}
-
-.footer-links {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  color: #c7cadb;
-}
-
-.footer-meta {
-  color: #c7cadb;
-  font-size: 0.85rem;
 }
 
 /* ================= RESPONSIVE ================= */
