@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Devs4Devs Conferences</title>
+    <title>Devs4Devs – Konferencje Automatyzacji Biznesowej</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +13,9 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- ================= HEADER / HERO ================= -->
     <header class="hero">
       <nav class="nav">
         <div class="logo">Devs4Devs</div>
@@ -23,223 +26,187 @@
           <a href="#prelegenci" data-i18n="nav.speakers">Prelegenci</a>
           <a href="#spolecznosc" data-i18n="nav.community">Społeczność</a>
           <a href="#galeria" data-i18n="nav.gallery">Galeria</a>
+          <a href="#prelegent" data-i18n="nav.speakerCta">Prelegent</a>
+          <a href="#dolacz" data-i18n="nav.join">Dołącz</a>
           <a href="#kontakt" class="button ghost" data-i18n="nav.contact">Kontakt</a>
           <button class="button small ghost" id="lang-toggle" type="button">EN</button>
         </div>
       </nav>
 
       <div class="hero-content">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Konferencje dla twórców technologii</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">
+          Konferencja dla pasjonatów automatyzacji biznesowej
+        </p>
+
         <h1 data-i18n="hero.title">Spotkajmy się na Devs4Devs</h1>
+
+        <p class="hero-tagline" data-i18n="hero.tagline">
+          Od praktyków dla praktyków
+        </p>
+
         <p class="hero-subtitle" data-i18n="hero.subtitle">
           Poznaj nadchodzące konferencje, warsztaty i spotkania społeczności Devs4Devs.
-          Zbieramy ludzi, którzy kochają rozwijać produkty, dzielić się wiedzą i budować relacje.
+          Łączymy ludzi, którzy projektują, wdrażają i skalują automatyzacje biznesowe.
         </p>
+
         <div class="hero-actions">
-          <a href="#konferencje" class="button primary" data-i18n="hero.primaryCta"
-            >Zobacz konferencje</a
-          >
-          <a href="#kontakt" class="button ghost" data-i18n="hero.secondaryCta"
-            >Zostań partnerem</a
-          >
+          <a href="#konferencje" class="button primary" data-i18n="hero.primaryCta">
+            Zobacz wydarzenia
+          </a>
+          <a href="#kontakt" class="button ghost" data-i18n="hero.secondaryCta">
+            Zostań partnerem
+          </a>
         </div>
+
         <div id="hero-metrics" class="hero-metrics"></div>
       </div>
     </header>
 
+    <!-- ================= MAIN ================= -->
     <main>
+      <!-- MISJA -->
       <section id="misja" class="section alt">
         <div class="section-header">
           <div>
-            <p class="eyebrow" data-i18n="mission.eyebrow">UiPath Community Poland</p>
-            <h2 data-i18n="mission.title">Nasza misja</h2>
+            <p class="eyebrow">UiPath Community Poland</p>
+            <h2>Nasza misja</h2>
           </div>
-          <p class="section-description" data-i18n="mission.description">
-            Budujemy przestrzeń dla praktyków automatyzacji, AI i produktów cyfrowych. Łączymy
-            ludzi, którzy chcą dzielić się doświadczeniem, rozwijać kompetencje i wspólnie
-            odpowiadać na wyzwania rynku.
+          <p class="section-description">
+            Budujemy przestrzeń dla praktyków automatyzacji biznesowej, RPA, AI
+            i integracji systemowych. Skupiamy się na realnych wdrożeniach,
+            architekturze i doświadczeniach z projektów.
           </p>
         </div>
+
         <div class="info-grid">
           <div class="info-card">
-            <h3 data-i18n="mission.whoTitle">Kim jesteśmy</h3>
-            <p data-i18n="mission.whoBody">
-              Społeczność ekspertów, liderów i pasjonatów technologii, działająca jako UiPath
-              Community Poland.
+            <h3>Kim jesteśmy</h3>
+            <p>
+              Społeczność praktyków automatyzacji działająca w ramach
+              UiPath Community Poland.
             </p>
           </div>
           <div class="info-card">
-            <h3 data-i18n="mission.partnersTitle">Z kim współpracowaliśmy</h3>
-            <p data-i18n="mission.partnersBody">
-              Wspólne inicjatywy realizowaliśmy z zespołami produktowymi, firmami consultingowymi i
-              organizacjami edukacyjnymi.
+            <h3>Partnerzy i współpraca</h3>
+            <p>
+              Współpracujemy z firmami technologicznymi, zespołami produktowymi
+              i liderami automatyzacji.
             </p>
           </div>
           <div class="info-card">
-            <h3 data-i18n="mission.citiesTitle">Miasta</h3>
-            <p data-i18n="mission.citiesBody">
-              Warszawa, Kraków, Wrocław, Gdańsk, Poznań, Katowice — spotykamy się tam, gdzie
-              rozwija się technologia.
+            <h3>Miasta</h3>
+            <p>
+              Warszawa, Kraków, Wrocław, Łódź – spotykamy się tam,
+              gdzie realnie dzieje się automatyzacja.
             </p>
           </div>
         </div>
       </section>
 
+      <!-- KONFERENCJE -->
       <section id="konferencje" class="section">
         <div class="section-header">
           <div>
-            <p class="eyebrow" data-i18n="events.eyebrow">Nadchodzące wydarzenia</p>
-            <h2 data-i18n="events.title">Harmonogram konferencji</h2>
+            <p class="eyebrow">Nadchodzące wydarzenia</p>
+            <h2>Harmonogram konferencji</h2>
           </div>
-          <p class="section-description" data-i18n="events.description">
-            Wszystkie konferencje Devs4Devs są hybrydowe: możesz dołączyć na miejscu lub online.
-            Wybierz interesujące Cię tematy i zarezerwuj miejsce.
+          <p class="section-description">
+            Konferencje, meetupy i community days Devs4Devs.
+            Wiedza praktyczna, bez marketingowych slajdów.
           </p>
         </div>
 
         <div id="conference-grid" class="conference-grid"></div>
       </section>
 
+      <!-- AGENDA -->
       <section id="agenda" class="section alt">
         <div class="section-header">
           <div>
-            <p class="eyebrow" data-i18n="agenda.eyebrow">Na co stawiamy</p>
-            <h2 data-i18n="agenda.title">Nowoczesna agenda</h2>
+            <p class="eyebrow">Na czym się skupiamy</p>
+            <h2>Agenda oparta na praktyce</h2>
           </div>
         </div>
+
         <div class="agenda-grid">
           <div class="agenda-card">
-            <h3 data-i18n="agenda.items.0.title">Product & Strategy</h3>
-            <p data-i18n="agenda.items.0.body">
-              Prelekcje o skalowaniu produktów, budowaniu roadmap oraz mierzeniu wpływu decyzji
-              biznesowych.
-            </p>
+            <h3>Business Automation</h3>
+            <p>RPA, agentic automation i automatyzacja procesów end-to-end.</p>
           </div>
           <div class="agenda-card">
-            <h3 data-i18n="agenda.items.1.title">Engineering Excellence</h3>
-            <p data-i18n="agenda.items.1.body">
-              Inżynieryjne best practices, architektura systemów i sposoby na utrzymanie jakości w
-              rosnących zespołach.
-            </p>
+            <h3>Architektura & Integracje</h3>
+            <p>API, systemy enterprise i skalowanie rozwiązań.</p>
           </div>
           <div class="agenda-card">
-            <h3 data-i18n="agenda.items.2.title">AI & Automation</h3>
-            <p data-i18n="agenda.items.2.body">
-              Praktyczne wdrożenia AI, automatyzacje procesów i narzędzia, które skracają czas
-              dostarczania.
-            </p>
+            <h3>AI w praktyce</h3>
+            <p>Dokumenty, agenci, orkiestracja i realne use case’y.</p>
           </div>
           <div class="agenda-card">
-            <h3 data-i18n="agenda.items.3.title">People & Community</h3>
-            <p data-i18n="agenda.items.3.body">
-              Panele o kulturze organizacyjnej, rozwoju talentów i budowaniu społeczności
-              technologicznych.
-            </p>
+            <h3>Społeczność & rozwój</h3>
+            <p>Kariera, kompetencje i wymiana doświadczeń.</p>
           </div>
         </div>
       </section>
 
+      <!-- PRELEGENCI -->
       <section id="prelegenci" class="section">
         <div class="section-header">
           <div>
-            <p class="eyebrow" data-i18n="speakers.eyebrow">Ludzie, którzy inspirują</p>
-            <h2 data-i18n="speakers.title">Prelegenci Devs4Devs</h2>
+            <p class="eyebrow">Praktycy z rynku</p>
+            <h2>Prelegenci Devs4Devs</h2>
           </div>
-          <p class="section-description" data-i18n="speakers.description">
-            Zapraszamy praktyków, którzy na co dzień budują produkty. Każdy speaker dzieli się
-            konkretnymi wnioskami i narzędziami do wdrożenia od zaraz.
+          <p class="section-description">
+            Zapraszamy osoby, które na co dzień budują i utrzymują automatyzacje.
           </p>
         </div>
+
         <div id="speaker-grid" class="speaker-grid"></div>
       </section>
 
-      <section id="spolecznosc" class="section">
-        <div class="section-header">
-          <div>
-            <p class="eyebrow" data-i18n="community.eyebrow">Społeczność</p>
-            <h2 data-i18n="community.title">Dlaczego Devs4Devs?</h2>
-          </div>
-          <p class="section-description" data-i18n="community.description">
-            Jesteśmy społecznością praktyków. Dbamy o bezpieczne, inspirujące środowisko i realne
-            rozmowy o wyzwaniach w technologii.
+      <!-- CTA PRELEGENT -->
+      <section id="prelegent" class="section alt cta">
+        <div>
+          <h2>Zostań prelegentem</h2>
+          <p>
+            Masz praktyczny case z automatyzacji biznesowej?
+            Oddajemy scenę praktykom.
           </p>
         </div>
-        <div class="community-grid">
-          <div class="community-card">
-            <span>🤝</span>
-            <h3 data-i18n="community.items.0.title">Networking, który działa</h3>
-            <p data-i18n="community.items.0.body">
-              Strefy tematyczne, szybkie spotkania 1:1 i afterparty dla uczestników.
-            </p>
-          </div>
-          <div class="community-card">
-            <span>🎤</span>
-            <h3 data-i18n="community.items.1.title">Prelegenci z praktyką</h3>
-            <p data-i18n="community.items.1.body">
-              Case studies od liderów i zespołów, które dowożą produkty.
-            </p>
-          </div>
-          <div class="community-card">
-            <span>📚</span>
-            <h3 data-i18n="community.items.2.title">Materiały po konferencji</h3>
-            <p data-i18n="community.items.2.body">
-              Dostęp do nagrań, slajdów i podsumowań w jednym miejscu.
-            </p>
-          </div>
-        </div>
+        <a class="button primary" href="mailto:contact@devs4devs.pl">
+          Zgłoś temat
+        </a>
       </section>
 
-      <section id="galeria" class="section alt">
-        <div class="section-header">
-          <div>
-            <p class="eyebrow" data-i18n="gallery.eyebrow">Galeria</p>
-            <h2 data-i18n="gallery.title">Chwile z naszych spotkań</h2>
-          </div>
-          <p class="section-description" data-i18n="gallery.description">
-            Zdjęcia z eventów Devs4Devs i UiPath Community Poland. Dodaj własne fotografie, aby
-            pokazać klimat wydarzeń.
-          </p>
-        </div>
-        <div class="gallery-grid">
-          <div class="gallery-item">📸</div>
-          <div class="gallery-item">🎬</div>
-          <div class="gallery-item">🎉</div>
-          <div class="gallery-item">🎤</div>
-          <div class="gallery-item">🤝</div>
-          <div class="gallery-item">🌟</div>
-        </div>
-      </section>
-
+      <!-- CTA PARTNER -->
       <section id="kontakt" class="section alt cta">
         <div>
-          <h2 data-i18n="contact.title">Zostań partnerem Devs4Devs</h2>
-          <p data-i18n="contact.body">
-            Chcesz zaprezentować swoje rozwiązania, wystąpić na scenie lub wesprzeć rozwój
-            społeczności? Napisz do nas i zbudujmy wspólnie kolejną edycję.
+          <h2>Zostań partnerem Devs4Devs</h2>
+          <p>
+            Współtwórz wydarzenia community i dotrzyj do praktyków automatyzacji.
           </p>
         </div>
-        <a class="button primary" href="mailto:contact@devs4devs.pl" data-i18n="contact.cta"
-          >Napisz do nas</a
-        >
+        <a class="button primary" href="mailto:contact@devs4devs.pl">
+          Skontaktuj się z nami
+        </a>
+      </section>
+
+      <!-- CTA DOŁĄCZ -->
+      <section id="dolacz" class="section cta">
+        <div>
+          <h2>Dołącz do Devs4Devs</h2>
+          <p>
+            Jeśli pracujesz z automatyzacją, RPA lub AI — jesteś w dobrym miejscu.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:contact@devs4devs.pl">
+          Dołącz teraz
+        </a>
       </section>
     </main>
 
     <footer class="footer">
-      <div>
-        <strong>Devs4Devs</strong>
-        <p data-i18n="footer.tagline">Tworzymy konferencje dla ludzi technologii w Polsce.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#misja" data-i18n="nav.mission">Nasza misja</a>
-        <a href="#konferencje" data-i18n="nav.events">Konferencje</a>
-        <a href="#agenda" data-i18n="nav.agenda">Agenda</a>
-        <a href="#prelegenci" data-i18n="nav.speakers">Prelegenci</a>
-        <a href="#spolecznosc" data-i18n="nav.community">Społeczność</a>
-        <a href="#galeria" data-i18n="nav.gallery">Galeria</a>
-      </div>
-      <div class="footer-meta">
-        <p data-i18n="footer.copy">© 2024 Devs4Devs. Wszelkie prawa zastrzeżone.</p>
-      </div>
+      <strong>Devs4Devs</strong>
+      <p>© 2024 Devs4Devs. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
     <script src="script.js"></script>

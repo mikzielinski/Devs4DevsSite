@@ -7,86 +7,85 @@ const content = {
       speakers: "Prelegenci",
       community: "Społeczność",
       gallery: "Galeria",
+      speakerCta: "Prelegent",
+      join: "Dołącz",
       contact: "Kontakt",
     },
     hero: {
-      eyebrow: "Konferencje dla twórców technologii",
+      eyebrow: "Konferencja dla pasjonatów automatyzacji biznesowej",
       title: "Spotkajmy się na Devs4Devs",
+      tagline: "Od praktyków dla praktyków",
       subtitle:
-        "Poznaj nadchodzące konferencje, warsztaty i spotkania społeczności Devs4Devs. Zbieramy ludzi, którzy kochają rozwijać produkty, dzielić się wiedzą i budować relacje.",
-      primaryCta: "Zobacz konferencje",
+        "Poznaj nadchodzące konferencje, warsztaty i spotkania społeczności Devs4Devs. Łączymy ludzi, którzy projektują, wdrażają i skalują automatyzacje biznesowe — od RPA, przez integracje systemowe, po nowoczesne rozwiązania AI i agentic automation.",
+      primaryCta: "Zobacz wydarzenia",
       secondaryCta: "Zostań partnerem",
     },
     mission: {
       eyebrow: "UiPath Community Poland",
       title: "Nasza misja",
       description:
-        "Budujemy przestrzeń dla praktyków automatyzacji, AI i produktów cyfrowych. Łączymy ludzi, którzy chcą dzielić się doświadczeniem, rozwijać kompetencje i wspólnie odpowiadać na wyzwania rynku.",
+        "Budujemy przestrzeń dla praktyków automatyzacji biznesowej. Skupiamy się na realnych wdrożeniach, architekturze, kompromisach projektowych i doświadczeniach z prawdziwych projektów.",
       whoTitle: "Kim jesteśmy",
       whoBody:
-        "Społeczność ekspertów, liderów i pasjonatów technologii, działająca jako UiPath Community Poland.",
-      partnersTitle: "Z kim współpracowaliśmy",
+        "Społeczność praktyków automatyzacji działająca w ramach UiPath Community Poland.",
+      partnersTitle: "Partnerzy i współpraca",
       partnersBody:
-        "Wspólne inicjatywy realizowaliśmy z zespołami produktowymi, firmami consultingowymi i organizacjami edukacyjnymi.",
+        "Współpracujemy z firmami technologicznymi, zespołami produktowymi i liderami automatyzacji.",
       citiesTitle: "Miasta",
       citiesBody:
-        "Warszawa, Kraków, Wrocław, Gdańsk, Poznań, Katowice — spotykamy się tam, gdzie rozwija się technologia.",
+        "Warszawa, Kraków, Wrocław, Łódź — spotykamy się tam, gdzie realnie dzieje się automatyzacja.",
     },
     events: {
       eyebrow: "Nadchodzące wydarzenia",
       title: "Harmonogram konferencji",
       description:
-        "Wszystkie konferencje Devs4Devs są hybrydowe: możesz dołączyć na miejscu lub online. Wybierz interesujące Cię tematy i zarezerwuj miejsce.",
+        "Konferencje, meetupy i community days Devs4Devs. Wiedza praktyczna, bez marketingowych slajdów.",
     },
     agenda: {
-      eyebrow: "Na co stawiamy",
-      title: "Nowoczesna agenda",
+      eyebrow: "Na czym się skupiamy",
+      title: "Agenda oparta na praktyce",
       items: [
         {
-          title: "Product & Strategy",
-          body:
-            "Prelekcje o skalowaniu produktów, budowaniu roadmap oraz mierzeniu wpływu decyzji biznesowych.",
+          title: "Business Automation",
+          body: "RPA, agentic automation i automatyzacja procesów end-to-end.",
         },
         {
-          title: "Engineering Excellence",
-          body:
-            "Inżynieryjne best practices, architektura systemów i sposoby na utrzymanie jakości w rosnących zespołach.",
+          title: "Architektura & Integracje",
+          body: "API, systemy enterprise i skalowanie rozwiązań.",
         },
         {
-          title: "AI & Automation",
-          body:
-            "Praktyczne wdrożenia AI, automatyzacje procesów i narzędzia, które skracają czas dostarczania.",
+          title: "AI w praktyce",
+          body: "Dokumenty, agenci, orkiestracja i realne use case’y.",
         },
         {
-          title: "People & Community",
-          body:
-            "Panele o kulturze organizacyjnej, rozwoju talentów i budowaniu społeczności technologicznych.",
+          title: "Społeczność & rozwój",
+          body: "Kariera, kompetencje i wymiana doświadczeń.",
         },
       ],
     },
     speakers: {
-      eyebrow: "Ludzie, którzy inspirują",
+      eyebrow: "Praktycy z rynku",
       title: "Prelegenci Devs4Devs",
       description:
-        "Zapraszamy praktyków, którzy na co dzień budują produkty. Każdy speaker dzieli się konkretnymi wnioskami i narzędziami do wdrożenia od zaraz.",
+        "Zapraszamy osoby, które na co dzień projektują, wdrażają i utrzymują automatyzacje.",
     },
     community: {
       eyebrow: "Społeczność",
       title: "Dlaczego Devs4Devs?",
       description:
-        "Jesteśmy społecznością praktyków. Dbamy o bezpieczne, inspirujące środowisko i realne rozmowy o wyzwaniach w technologii.",
+        "Jesteśmy społecznością praktyków. Stawiamy na merytorykę, otwartość i realne rozmowy o wyzwaniach.",
       items: [
         {
           title: "Networking, który działa",
-          body: "Strefy tematyczne, szybkie spotkania 1:1 i afterparty dla uczestników.",
+          body: "Tematyczne rozmowy, spotkania 1:1 i after-eventy.",
         },
         {
           title: "Prelegenci z praktyką",
-          body: "Case studies od liderów i zespołów, które dowożą produkty.",
+          body: "Case studies z prawdziwych projektów.",
         },
         {
-          title: "Materiały po konferencji",
-          body: "Dostęp do nagrań, slajdów i podsumowań w jednym miejscu.",
+          title: "Materiały po wydarzeniach",
+          body: "Nagrania, slajdy i podsumowania w jednym miejscu.",
         },
       ],
     },
@@ -94,19 +93,32 @@ const content = {
       eyebrow: "Galeria",
       title: "Chwile z naszych spotkań",
       description:
-        "Zdjęcia z eventów Devs4Devs i UiPath Community Poland. Dodaj własne fotografie, aby pokazać klimat wydarzeń.",
+        "Zdjęcia z wydarzeń Devs4Devs i UiPath Community Poland.",
+    },
+    speakerCta: {
+      title: "Zostań prelegentem",
+      body:
+        "Masz praktyczny case z automatyzacji biznesowej? Oddajemy scenę praktykom.",
+      cta: "Zgłoś temat",
     },
     contact: {
       title: "Zostań partnerem Devs4Devs",
       body:
-        "Chcesz zaprezentować swoje rozwiązania, wystąpić na scenie lub wesprzeć rozwój społeczności? Napisz do nas i zbudujmy wspólnie kolejną edycję.",
-      cta: "Napisz do nas",
+        "Współtwórz wydarzenia community i dotrzyj do praktyków automatyzacji.",
+      cta: "Skontaktuj się z nami",
+    },
+    join: {
+      title: "Dołącz do Devs4Devs",
+      body:
+        "Jeśli pracujesz z automatyzacją, RPA lub AI — jesteś w dobrym miejscu.",
+      cta: "Dołącz teraz",
     },
     footer: {
-      tagline: "Tworzymy konferencje dla ludzi technologii w Polsce.",
+      tagline: "Społeczność praktyków automatyzacji biznesowej.",
       copy: "© 2024 Devs4Devs. Wszelkie prawa zastrzeżone.",
     },
   },
+
   en: {
     nav: {
       mission: "Our mission",
@@ -115,103 +127,113 @@ const content = {
       speakers: "Speakers",
       community: "Community",
       gallery: "Gallery",
+      speakerCta: "Become a speaker",
+      join: "Join",
       contact: "Contact",
     },
     hero: {
-      eyebrow: "Conferences for technology creators",
+      eyebrow: "A conference for business automation enthusiasts",
       title: "Meet us at Devs4Devs",
+      tagline: "By practitioners, for practitioners",
       subtitle:
-        "Discover upcoming conferences, workshops, and community meetups by Devs4Devs. We gather people who love building products, sharing knowledge, and nurturing relationships.",
-      primaryCta: "See events",
+        "Discover upcoming Devs4Devs conferences, workshops, and community meetups. We bring together people who design, implement, and scale business automation solutions.",
+      primaryCta: "View events",
       secondaryCta: "Become a partner",
     },
     mission: {
       eyebrow: "UiPath Community Poland",
       title: "Our mission",
       description:
-        "We build a space for automation, AI, and digital product practitioners. We connect people who want to share experience, grow their skills, and address market challenges together.",
+        "We build a space for business automation practitioners, focused on real implementations, architecture decisions, and project trade-offs.",
       whoTitle: "Who we are",
       whoBody:
-        "A community of experts, leaders, and technology enthusiasts operating as UiPath Community Poland.",
-      partnersTitle: "Who we've worked with",
+        "A community of automation practitioners operating within UiPath Community Poland.",
+      partnersTitle: "Partners & collaboration",
       partnersBody:
-        "We have partnered with product teams, consulting companies, and educational organizations.",
+        "We work with technology companies, product teams, and automation leaders.",
       citiesTitle: "Cities",
       citiesBody:
-        "Warsaw, Kraków, Wrocław, Gdańsk, Poznań, Katowice — we meet wherever technology grows.",
+        "Warsaw, Kraków, Wrocław, Łódź — we meet where automation happens.",
     },
     events: {
       eyebrow: "Upcoming events",
       title: "Conference schedule",
       description:
-        "All Devs4Devs conferences are hybrid: join on-site or online. Pick the topics you care about and reserve your seat.",
+        "Conferences, meetups, and community days focused on practical automation.",
     },
     agenda: {
-      eyebrow: "What we focus on",
-      title: "Modern agenda",
+      eyebrow: "Our focus",
+      title: "Practice-driven agenda",
       items: [
         {
-          title: "Product & Strategy",
-          body:
-            "Talks on scaling products, building roadmaps, and measuring business decision impact.",
+          title: "Business Automation",
+          body: "RPA, agentic automation, and end-to-end processes.",
         },
         {
-          title: "Engineering Excellence",
-          body:
-            "Engineering best practices, system architecture, and sustaining quality in growing teams.",
+          title: "Architecture & Integrations",
+          body: "APIs, enterprise systems, and scaling solutions.",
         },
         {
-          title: "AI & Automation",
-          body:
-            "Practical AI implementations, process automation, and tools that shorten delivery time.",
+          title: "AI in practice",
+          body: "Documents, agents, orchestration, real use cases.",
         },
         {
-          title: "People & Community",
-          body:
-            "Panels on organizational culture, talent growth, and building tech communities.",
+          title: "Community & growth",
+          body: "Careers, skills, and knowledge sharing.",
         },
       ],
     },
     speakers: {
-      eyebrow: "People who inspire",
+      eyebrow: "Practitioners",
       title: "Devs4Devs speakers",
       description:
-        "We invite practitioners who build products daily. Each speaker shares actionable insights and tools you can apply right away.",
+        "We invite people who build and maintain automation solutions every day.",
     },
     community: {
       eyebrow: "Community",
       title: "Why Devs4Devs?",
       description:
-        "We are a community of practitioners. We care about a safe, inspiring environment and real conversations about technology challenges.",
+        "A practitioner-driven community focused on meaningful discussions.",
       items: [
         {
-          title: "Networking that works",
-          body: "Topic zones, fast 1:1 meetings, and afterparties for attendees.",
+          title: "Effective networking",
+          body: "Focused conversations and post-event meetups.",
         },
         {
-          title: "Speakers with experience",
-          body: "Case studies from leaders and teams delivering products.",
+          title: "Experienced speakers",
+          body: "Case studies from real projects.",
         },
         {
           title: "Post-event materials",
-          body: "Access to recordings, slides, and summaries in one place.",
+          body: "Access to recordings and slides.",
         },
       ],
     },
     gallery: {
       eyebrow: "Gallery",
-      title: "Moments from our meetups",
-      description:
-        "Photos from Devs4Devs and UiPath Community Poland events. Add your own images to show the event vibe.",
+      title: "Moments from our events",
+      description: "Photos from Devs4Devs community events.",
+    },
+    speakerCta: {
+      title: "Become a speaker",
+      body:
+        "Have a real automation case to share? We give the stage to practitioners.",
+      cta: "Submit a topic",
     },
     contact: {
       title: "Become a Devs4Devs partner",
       body:
-        "Want to showcase your solutions, speak on stage, or support the community? Drop us a line and let's build the next edition together.",
+        "Co-create community events and reach automation practitioners.",
       cta: "Contact us",
     },
+    join: {
+      title: "Join Devs4Devs",
+      body:
+        "If you work with automation, RPA, or AI — this is your place.",
+      cta: "Join now",
+    },
     footer: {
-      tagline: "We organize conferences for technology people in Poland.",
+      tagline: "A community of business automation practitioners.",
       copy: "© 2024 Devs4Devs. All rights reserved.",
     },
   },
@@ -219,203 +241,63 @@ const content = {
 
 const data = {
   metrics: [
-    { value: "12", label: { pl: "edycji w Polsce", en: "editions in Poland" } },
-    { value: "1800+", label: { pl: "uczestników rocznie", en: "attendees yearly" } },
-    { value: "45", label: { pl: "prelegentów w 2024", en: "speakers in 2024" } },
-    { value: "6", label: { pl: "miast gospodarzy", en: "host cities" } },
-  ],
-  conferences: [
-    {
-      title: "Devs4Devs Summit",
-      date: "12-13 marca 2025",
-      location: "Warszawa · Hybrydowo",
-      focus: "Product, AI, Leadership",
-      status: "Rejestracja otwarta",
-      cta: { pl: "Kup bilet", en: "Buy ticket" },
-      url: "https://example.com/devs4devs-summit",
-    },
-    {
-      title: "Devs4Devs Cloud Days",
-      date: "24 maja 2025",
-      location: "Kraków · Stacjonarnie",
-      focus: "Cloud, DevOps, Security",
-      status: "Lista zainteresowanych",
-      cta: { pl: "Zapisz się", en: "Join list" },
-      url: "https://example.com/devs4devs-cloud-days",
-    },
-    {
-      title: "Devs4Devs Frontend Lab",
-      date: "18 czerwca 2025",
-      location: "Gdańsk · Hybrydowo",
-      focus: "UX, Design Systems, Web Perf",
-      status: "Sprzedaż biletów wkrótce",
-      cta: { pl: "Powiadom mnie", en: "Notify me" },
-      url: "https://example.com/devs4devs-frontend-lab",
-    },
-    {
-      title: "Devs4Devs Data Insights",
-      date: "10 września 2025",
-      location: "Wrocław · Hybrydowo",
-      focus: "Data, ML, Analytics",
-      status: "Call for papers",
-      cta: { pl: "Zgłoś prelekcję", en: "Submit talk" },
-      url: "https://example.com/devs4devs-data-insights",
-    },
-  ],
-  speakers: [
-    {
-      name: "Klaudia Nowak",
-      role: { pl: "Head of Product @ FinTechia", en: "Head of Product @ FinTechia" },
-      topic: {
-        pl: "Roadmapa produktowa na podstawie danych",
-        en: "Data-driven product roadmaps",
-      },
-    },
-    {
-      name: "Marcin Zieliński",
-      role: { pl: "Engineering Manager @ Cloudify", en: "Engineering Manager @ Cloudify" },
-      topic: {
-        pl: "Skalowanie zespołów i jakości w microservices",
-        en: "Scaling teams and quality in microservices",
-      },
-    },
-    {
-      name: "Aleksandra Lewandowska",
-      role: { pl: "AI Lead @ BrightLabs", en: "AI Lead @ BrightLabs" },
-      topic: {
-        pl: "Praktyczne wdrożenia AI w zespołach software",
-        en: "Practical AI rollouts in software teams",
-      },
-    },
-    {
-      name: "Tomasz Kowal",
-      role: { pl: "Design Systems @ Nord", en: "Design Systems @ Nord" },
-      topic: {
-        pl: "System design jako wspólny język produktu",
-        en: "Design systems as a shared product language",
-      },
-    },
+    { value: "4", label: { pl: "edycje wydarzeń", en: "event editions" } },
+    { value: "4", label: { pl: "miasta", en: "cities" } },
+    { value: "400+", label: { pl: "uczestników", en: "participants" } },
+    { value: "30+", label: { pl: "prelegentów", en: "speakers" } },
+    { value: "25+", label: { pl: "prelekcji i paneli", en: "talks & panels" } },
   ],
 };
 
 const metricsGrid = document.querySelector("#hero-metrics");
-const conferenceGrid = document.querySelector("#conference-grid");
-const speakerGrid = document.querySelector("#speaker-grid");
 const langToggle = document.querySelector("#lang-toggle");
 
 let currentLang = "pl";
 
 const setText = (key, value) => {
-  document.querySelectorAll(`[data-i18n="${key}"]`).forEach((element) => {
-    element.textContent = value;
+  document.querySelectorAll(`[data-i18n="${key}"]`).forEach((el) => {
+    el.textContent = value;
   });
 };
 
 const applyTranslations = () => {
-  const translations = content[currentLang];
+  const t = content[currentLang];
 
-  Object.entries(translations.nav).forEach(([key, value]) =>
-    setText(`nav.${key}`, value)
-  );
-  Object.entries(translations.hero).forEach(([key, value]) =>
-    setText(`hero.${key}`, value)
-  );
-  Object.entries(translations.mission).forEach(([key, value]) =>
-    setText(`mission.${key}`, value)
-  );
-  Object.entries(translations.events).forEach(([key, value]) =>
-    setText(`events.${key}`, value)
-  );
-  Object.entries(translations.agenda).forEach(([key, value]) => {
-    if (key === "items") {
-      value.forEach((item, index) => {
-        setText(`agenda.items.${index}.title`, item.title);
-        setText(`agenda.items.${index}.body`, item.body);
+  Object.entries(t.nav).forEach(([k, v]) => setText(`nav.${k}`, v));
+  Object.entries(t.hero).forEach(([k, v]) => setText(`hero.${k}`, v));
+  Object.entries(t.mission).forEach(([k, v]) => setText(`mission.${k}`, v));
+  Object.entries(t.events).forEach(([k, v]) => setText(`events.${k}`, v));
+  Object.entries(t.speakers).forEach(([k, v]) => setText(`speakers.${k}`, v));
+  Object.entries(t.community).forEach(([k, v]) => {
+    if (k === "items") {
+      v.forEach((item, i) => {
+        setText(`community.items.${i}.title`, item.title);
+        setText(`community.items.${i}.body`, item.body);
       });
     } else {
-      setText(`agenda.${key}`, value);
+      setText(`community.${k}`, v);
     }
   });
-  Object.entries(translations.speakers).forEach(([key, value]) =>
-    setText(`speakers.${key}`, value)
-  );
-  Object.entries(translations.community).forEach(([key, value]) => {
-    if (key === "items") {
-      value.forEach((item, index) => {
-        setText(`community.items.${index}.title`, item.title);
-        setText(`community.items.${index}.body`, item.body);
-      });
-    } else {
-      setText(`community.${key}`, value);
-    }
-  });
-  Object.entries(translations.gallery).forEach(([key, value]) =>
-    setText(`gallery.${key}`, value)
-  );
-  Object.entries(translations.contact).forEach(([key, value]) =>
-    setText(`contact.${key}`, value)
-  );
-  Object.entries(translations.footer).forEach(([key, value]) =>
-    setText(`footer.${key}`, value)
-  );
-
-  if (langToggle) {
-    langToggle.textContent = currentLang === "pl" ? "EN" : "PL";
-  }
+  Object.entries(t.gallery).forEach(([k, v]) => setText(`gallery.${k}`, v));
+  Object.entries(t.speakerCta).forEach(([k, v]) => setText(`speakerCta.${k}`, v));
+  Object.entries(t.contact).forEach(([k, v]) => setText(`contact.${k}`, v));
+  Object.entries(t.join).forEach(([k, v]) => setText(`join.${k}`, v));
+  Object.entries(t.footer).forEach(([k, v]) => setText(`footer.${k}`, v));
 
   renderMetrics();
-  renderConferences();
-  renderSpeakers();
+  if (langToggle) langToggle.textContent = currentLang === "pl" ? "EN" : "PL";
 };
 
 const renderMetrics = () => {
   if (!metricsGrid) return;
   metricsGrid.innerHTML = data.metrics
     .map(
-      (metric) => `
-        <div>
-          <span class="metric">${metric.value}</span>
-          <span class="metric-label">${metric.label[currentLang]}</span>
-        </div>
-      `
-    )
-    .join("");
-};
-
-const renderConferences = () => {
-  if (!conferenceGrid) return;
-  conferenceGrid.innerHTML = data.conferences
-    .map(
-      (conference) => `
-        <article class="conference-card">
-          <span>${conference.status}</span>
-          <h3>${conference.title}</h3>
-          <p>${conference.focus}</p>
-          <div class="conference-meta">
-            <span>📅 ${conference.date}</span>
-            <span>📍 ${conference.location}</span>
-          </div>
-          <a class="button small ghost" href="${conference.url}" target="_blank" rel="noopener">
-            ${conference.cta[currentLang]}
-          </a>
-        </article>
-      `
-    )
-    .join("");
-};
-
-const renderSpeakers = () => {
-  if (!speakerGrid) return;
-  speakerGrid.innerHTML = data.speakers
-    .map(
-      (speaker) => `
-        <article class="speaker-card">
-          <div class="speaker-avatar">${speaker.name[0]}</div>
-          <h3>${speaker.name}</h3>
-          <p class="speaker-role">${speaker.role[currentLang]}</p>
-          <p class="speaker-topic">${speaker.topic[currentLang]}</p>
-        </article>
-      `
+      (m) => `
+      <div>
+        <span class="metric">${m.value}</span>
+        <span class="metric-label">${m.label[currentLang]}</span>
+      </div>
+    `
     )
     .join("");
 };
