@@ -26,14 +26,24 @@ const content = {
       description:
         "Budujemy przestrzeń dla praktyków automatyzacji biznesowej. Skupiamy się na realnych wdrożeniach, architekturze, kompromisach projektowych i doświadczeniach z prawdziwych projektów.",
       whoTitle: "Kim jesteśmy",
+      whoFlag: "🇵🇱",
       whoBody:
-        "Społeczność praktyków automatyzacji działająca w ramach UiPath Community Poland.",
+        "Devs4Devs to społeczność praktyków automatyzacji biznesowej, działająca w ramach UiPath Community Poland. Skupiamy ludzi, którzy na co dzień projektują, wdrażają i skalują rozwiązania automatyzacyjne — od RPA i integracji systemowych po nowoczesne rozwiązania oparte o AI. Stawiamy na realne doświadczenia, merytoryczną wymianę wiedzy i współpracę opartą na praktyce, nie teorii.",
       partnersTitle: "Partnerzy i współpraca",
-      partnersBody:
-        "Współpracujemy z firmami technologicznymi, zespołami produktowymi i liderami automatyzacji.",
+      partnersBody: "Tu damy loga firm, które nas hostowały.",
+      partnersPlaceholder: "Logo partnera",
       citiesTitle: "Miasta",
       citiesBody:
         "Warszawa, Kraków, Wrocław, Łódź — spotykamy się tam, gdzie realnie dzieje się automatyzacja.",
+      citiesMarkers: {
+        warsaw: "Warszawa",
+        krakow: "Kraków",
+        wroclaw: "Wrocław",
+        lodz: "Łódź",
+      },
+      mapHint: "Kliknij miasto, aby zobaczyć wydarzenia UiPath Community.",
+      mapSelectedLabel: "Wybrane miasto:",
+      mapCta: "Otwórz stronę wydarzeń",
     },
     events: {
       eyebrow: "Nadchodzące wydarzenia",
@@ -146,14 +156,24 @@ const content = {
       description:
         "We build a space for business automation practitioners, focused on real implementations, architecture decisions, and project trade-offs.",
       whoTitle: "Who we are",
+      whoFlag: "🇬🇧",
       whoBody:
-        "A community of automation practitioners operating within UiPath Community Poland.",
+        "Devs4Devs is a community of business automation practitioners operating within UiPath Community Poland. We bring together people who design, implement, and scale automation solutions on a daily basis — from RPA and system integrations to modern AI-driven automation. Our focus is on real-world experience, practical knowledge sharing, and collaboration grounded in hands-on work, not theory.",
       partnersTitle: "Partners & collaboration",
-      partnersBody:
-        "We work with technology companies, product teams, and automation leaders.",
+      partnersBody: "We will showcase logos of the companies that hosted us.",
+      partnersPlaceholder: "Partner logo",
       citiesTitle: "Cities",
       citiesBody:
-        "Warsaw, Kraków, Wrocław, Łódź — we meet where automation happens.",
+        "Warsaw, Krakow, Wroclaw, Lodz — we meet where automation happens.",
+      citiesMarkers: {
+        warsaw: "Warsaw",
+        krakow: "Krakow",
+        wroclaw: "Wroclaw",
+        lodz: "Lodz",
+      },
+      mapHint: "Click a city to see UiPath Community events.",
+      mapSelectedLabel: "Selected city:",
+      mapCta: "Open events page",
     },
     events: {
       eyebrow: "Upcoming events",
@@ -251,8 +271,11 @@ const data = {
 
 const metricsGrid = document.querySelector("#hero-metrics");
 const langToggle = document.querySelector("#lang-toggle");
+const mapMarkers = document.querySelectorAll(".map-marker");
+const mapSelectedCity = document.querySelector("#map-selected-city");
 
 let currentLang = "pl";
+let activeCity = "warsaw";
 
 const setText = (key, value) => {
   document.querySelectorAll(`[data-i18n="${key}"]`).forEach((el) => {
@@ -265,7 +288,15 @@ const applyTranslations = () => {
 
   Object.entries(t.nav).forEach(([k, v]) => setText(`nav.${k}`, v));
   Object.entries(t.hero).forEach(([k, v]) => setText(`hero.${k}`, v));
-  Object.entries(t.mission).forEach(([k, v]) => setText(`mission.${k}`, v));
+  Object.entries(t.mission).forEach(([k, v]) => {
+    if (k === "citiesMarkers") {
+      Object.entries(v).forEach(([cityKey, cityLabel]) => {
+        setText(`mission.citiesMarkers.${cityKey}`, cityLabel);
+      });
+    } else {
+      setText(`mission.${k}`, v);
+    }
+  });
   Object.entries(t.events).forEach(([k, v]) => setText(`events.${k}`, v));
   Object.entries(t.speakers).forEach(([k, v]) => setText(`speakers.${k}`, v));
   Object.entries(t.community).forEach(([k, v]) => {
@@ -285,6 +316,7 @@ const applyTranslations = () => {
   Object.entries(t.footer).forEach(([k, v]) => setText(`footer.${k}`, v));
 
   renderMetrics();
+  updateActiveCity(activeCity);
   if (langToggle) langToggle.textContent = currentLang === "pl" ? "EN" : "PL";
 };
 
@@ -301,6 +333,29 @@ const renderMetrics = () => {
     )
     .join("");
 };
+
+const updateActiveCity = (cityKey) => {
+  if (!mapSelectedCity) return;
+  const label = content[currentLang]?.mission?.citiesMarkers?.[cityKey];
+  if (label) {
+    mapSelectedCity.textContent = label;
+  }
+  mapMarkers.forEach((marker) => {
+    marker.classList.toggle("is-active", marker.dataset.city === cityKey);
+  });
+};
+
+if (mapMarkers.length) {
+  mapMarkers.forEach((marker) => {
+    marker.addEventListener("click", () => {
+      const cityKey = marker.dataset.city;
+      if (cityKey) {
+        activeCity = cityKey;
+        updateActiveCity(activeCity);
+      }
+    });
+  });
+}
 
 if (langToggle) {
   langToggle.addEventListener("click", () => {
